@@ -1,0 +1,22 @@
+﻿<Window x:Class="CheckBoxes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CheckBoxes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label FontWeight="Bold">Beläge</Label>
+        <CheckBox x:Name="cBAlleBeläge" IsThreeState="True" Checked="cBAlleBelägeChecked" Unchecked="cBAlleBelägeChecked">Alle auswählen</CheckBox>
+        <StackPanel Margin="10">
+            <CheckBox x:Name="cBSalami" Checked="cBEinzelbelag" Unchecked="cBEinzelbelag">
+                <TextBlock>
+            Salami <Run Foreground="Red" FontWeight="Bold">Scharf</Run>
+                </TextBlock>
+            </CheckBox>
+            <CheckBox x:Name="cBChampignons" Checked="cBEinzelbelag" Unchecked="cBEinzelbelag">Champignons</CheckBox>
+            <CheckBox x:Name="cBGouda" Checked="cBEinzelbelag" Unchecked="cBEinzelbelag">Gouda</CheckBox>
+        </StackPanel>
+    </StackPanel>
+</Window>

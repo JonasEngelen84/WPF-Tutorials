@@ -1,0 +1,29 @@
+﻿<Window x:Class="DataBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataBinding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    
+    <!--
+    1: Bindingziel      <-      oneWay              Bindungsquelle
+    2: Bindingziel      <-      twoWay      ->      Bindungsquelle
+    3: Bindingziel          oneWayToSource  ->      Bindungsquelle
+    4: Bindingziel      <___    oneTime             Bindungsquelle
+    (oneTime Wird nur einmal während Initialisierung im Konstruktor durchgeführt)
+    -->
+
+    <StackPanel>
+        <TextBox Name="MyTextBox"
+             Width="100"
+             Margin="50"
+             Text="{Binding ElementName=MySlider, Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <Slider Name="MySlider"
+            Minimum="0"
+            Maximum="100"
+            IsSnapToTickEnabled="True"/>
+    </StackPanel>
+</Window>

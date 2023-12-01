@@ -1,0 +1,15 @@
+﻿<Window x:Class="Datenbanken.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Datenbanken"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="Zooliste" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"></Label>
+        <ListBox x:Name="ZooList" HorizontalAlignment="Left" Height="105" Margin="10,40,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="ZooList_SelectionChanged"></ListBox>
+        <Label Content="Tiere " HorizontalAlignment="Left" Margin="133,9,0,0" VerticalAlignment="Top" Width="75"/>
+        <ListBox x:Name="AnimalList" HorizontalAlignment="Left" Height="150" Margin="133,39,0,0" VerticalAlignment="Top" Width="100"/>
+    </Grid>
+</Window>
