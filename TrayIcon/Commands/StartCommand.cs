@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using TrayIcon.Stores;
+﻿using TrayIcon.Stores;
 using TrayIcon.ViewModels;
 
 namespace TrayIcon.Commands

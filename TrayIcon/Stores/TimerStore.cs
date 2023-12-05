@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Timers;
-using Forms = System.Windows.Forms;
 using TrayIcon.Services;
+using Forms = System.Windows.Forms;
 
 namespace TrayIcon.Stores
 {
